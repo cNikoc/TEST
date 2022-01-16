@@ -6,7 +6,7 @@ let descuento = document.querySelector(".switch");
 // generar descuento 25%
 descuento.addEventListener('click', ()=> {
 
-    if (checkBox.checked === true) {
+    if (checkBox.checked) {
         
         let precioInt = parseInt(precio.textContent);
         precio.textContent = `${(precioInt - (precioInt * .25)) * 12}`;
